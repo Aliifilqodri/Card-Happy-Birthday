@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selamat Ulang Tahun!</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-color: #f0f0f0;
+    }
+    .birthday-card {
+        width: 300px;
+        height: 200px;
+        background-color: #fff;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        position: relative;
+    }
+    .birthday-card::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 50px;
+        height: 50px;
+        background: linear-gradient(-45deg, #f00, #ff0);
+        border-radius: 0 0 0 10px;
+        transform: translateY(-50%) translateX(50%);
+        z-index: 1;
+        box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+    .birthday-card-content {
+        padding: 20px;
+        text-align: center;
+        z-index: 2;
+    }
+    h1 {
+        font-size: 24px;
+        color: #333;
+        margin-bottom: 10px;
+    }
+    p {
+        font-size: 16px;
+        color: #666;
+        margin-bottom: 0;
+    }
+</style>
+</head>
+<body>
+    <div class="birthday-card">
+        <div class="birthday-card-content">
+            <h1>Selamat Ulang Tahun!</h1>
+            <p>Maaf lupa hehe. Semoga hari ulang tahunmu menyenangkan!</p>
+        </div>
+    </div>
+</body>
+</html>
